@@ -129,6 +129,10 @@ if(isset($_SESSION['user_id']) == false)
                 echo "<label for='' class='text-white fs-5'>Current Price: " . $currentPrice . "</label> <br>" .
 
                 "<label for='' class='text-white fs-5'>Total profit: " . (floatval(str_replace(['€', ','], ['', '.'], $currentPrice)) - floatval(str_replace(['€', ','], ['', '.'], $result['item_price_paid_for']))) * (int)$result['item_quantity'] .  '€' . "</label> <br>" .
+
+                "<form action='delete_item.php' method='post'>
+                <input type='hidden' name='user_item_id' value=" . $result['user_item_id'] . "?>" . "
+                <button type='submit' class='btn btn-danger mt-3'>Delete Item</button></form>" .
             
             " </div>
              </div>

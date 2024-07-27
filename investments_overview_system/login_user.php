@@ -23,6 +23,8 @@ if(!$results -> num_rows == 1)
 {
     $_SESSION['error'] = "Wrong username!";
 
+    $connect->close();
+    $run->close();
     header('location: index.php');
     exit;
 }
@@ -35,12 +37,18 @@ if(password_verify($password, $row["password"]) == true)
     $_SESSION['user_id'] = $row['user_id'];
     $_SESSION['success'] = "Login successful.";
 
+    $connect->close();
+    $run->close();
+
     header('location: dashboard.php');
     exit;
 }
 else
 {
     $_SESSION['error'] = "Wrong password!";
+
+    $connect->close();
+    $run->close();
 
     header('location: index.php');
     exit;

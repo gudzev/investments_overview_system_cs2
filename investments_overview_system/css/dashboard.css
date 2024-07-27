@@ -265,6 +265,7 @@ li
     height: 100%;
     margin-left: 10vw;
     height: 64px;
+    width: 48px;
 }
 
 .logout
@@ -371,7 +372,7 @@ select
     position: relative;
     left: 1vw;
     width: 90vw;
-    height: 40vh;
+    height: 50vh;
     background-color: rgb(70, 115, 91);
     border-radius: 15px;
 }

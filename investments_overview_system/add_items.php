@@ -120,4 +120,11 @@ if(isset($_SESSION['user_id']) == false)
     
 </body>
 
+<?php
+
+$connect->close();
+$run->close();
+
+?>
+
 </html>
