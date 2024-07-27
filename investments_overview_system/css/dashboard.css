@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(70, 115, 91);
+    height: 6vh;
+}
+
+.ul-image
+{
+    margin-left: 10vw;
+}
+  
+li 
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logout
+{
+    float: right;
+    margin-right: 10vw;
+    padding-top: .5vh;  
+    background-color: rgb(70, 115, 91);
+    height: 6vh;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+    border-top: none;
+    border-bottom: none;
+}
+
+.menu
+{
+    position: absolute;
+    top: 6vh;
+    background-color: rgb(70, 115, 91);
+    width: 10vw;
+    height: 200%;
+    animation: slide-in .5s 1 linear;
+    transition: all .5s;
+}
+
+.menu-shrink
+{
+    visibility: hidden;
+    width: 0vw;
+}
+
+.white
+{
+    color: white;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.m-top
+{
+    margin-top: 0.5vh;
+}
+
+.button-custom
+{
+    background-color: rgb(70, 115, 91);
+    overflow: hidden;
+    width: 100%;    
+    height: 5vh;
+    border-left: none;
+    border-right: none;
+}
+
+button:hover
+{
+    background-color: rgb(33, 63, 48);
+}
+ 
+.buttons:first-child
+{
+    border-top: none;
+}
+
+.aktivan
+{
+    background-color: rgb(33, 63, 48);
+}
+
+.content
+{
+    position: relative;
+    
+    left: 10vw;
+    height: 92.5vh;
+    width: 90vw;
+}
+
+.add-item
+{
+    width: 30vw;
+    height: 40vh;
+    background-color: rgb(70, 115, 91);
+    margin-left: 12.5vw;
+    margin-top: 5vh;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.item
+{
+    position: relative;
+    left: 1vw;
+    width: 20vw;
+    height: 40vh;
+    background-color: rgb(70, 115, 91);
+    border-radius: 15px;
+}
+
+.item h1
+{
+    height: 5vh;
+}
+
+.item img
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-details
+{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 57.5%;
+}
+
+.item-details-center
+{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+@media only screen and (max-width: 1920px) 
+{
+    .add-item
+    {
+        width: 30vw;
+        height: 45vh;
+        background-color: rgb(70, 115, 91);
+        margin-left: 12.5vw;
+        margin-top: 5vh;
+        border-radius: 15px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .item-details
+    {
+    position: absolute;
+    top: 47.5%;
+    width: 100%;
+    height: 57.5%;
+    }
+}
+
+@media only screen and (max-height: 1079px)
+{
+    .ul-image
+    {
+        margin-left: 10vw;
+        padding-top: .5vw;
+        width: 32px;
+        height: 48px;
+    }
+
+    .item-details
+    {
+        position: absolute;
+        top: 47.5%;
+        width: 100%;
+        height: 57.5%;
+    }
+
+    .add-item
+    {
+        width: 50vw;
+        height: 60vh;
+        background-color: rgb(70, 115, 91);
+        margin-left: 12.5vw;
+        margin-top: 5vh;
+        border-radius: 15px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .button-custom
+    {
+        background-color: rgb(70, 115, 91);
+        overflow: hidden;
+        width: 100%;    
+        height: 7.5vh;
+        border-left: none;
+        border-right: none;
+    }
+
+    .item
+    {
+        position: relative;
+        left: 1vw;
+        width: 20vw;
+        height: 50vh;
+        background-color: rgb(70, 115, 91);
+        border-radius: 15px;
+    }
+
+    .menu
+    {
+        position: absolute;
+        top: 6vh;
+        background-color: rgb(70, 115, 91);
+        width: 10vw;
+        height: 200%;
+        animation: slide-in .5s 1 linear;
+        transition: all .5s;
+    }
+
+    .menu-shrink
+    {
+        visibility: hidden;
+        width: 0vw;
+    }
+}
+
+@media only screen and (max-width: 600px) 
+{
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(70, 115, 91);
+    height: 10vh;
+}
+
+li
+{
+        height: 100%;
+}
+
+.ul-image
+{
+    height: 100%;
+    margin-left: 10vw;
+    height: 64px;
+}
+
+.logout
+{
+    float: right;
+    padding-top: .5vh;  
+    background-color: rgb(70, 115, 91);
+    height: 10vh;
+    width: 30vw;
+    text-align: center;
+    cursor: pointer;
+    border-top: none;
+    border-bottom: none;
+    margin-right: 0;
+}
+
+.menu
+{
+    position: absolute;
+    top: 10vh;
+    background-color: rgb(70, 115, 91);
+    width: 100vw;
+    height: 20vh;
+    transition: all .5s;
+}
+
+.menu-shrink
+{
+    visibility: hidden;
+    width: 0vw;
+}
+
+.white
+{
+    color: white;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.m-top
+{
+    margin-top: 1vh;
+}
+
+.button-custom
+{
+    background-color: rgb(70, 115, 91);
+    overflow: hidden;
+    width: 100%;    
+    height: 10vh;
+    border-left: none;
+    border-right: none;
+}
+
+button:hover
+{
+    background-color: rgb(33, 63, 48);
+}
+
+button 
+{
+    right: 0%;
+}
+
+.aktivan
+{
+    background-color: rgb(33, 63, 48);
+}
+
+.content
+{
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+
+    top: 20vh;
+    left: 0vh;
+}
+
+.add-item
+{
+    margin-top: 25vh;
+    width: 90vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(70, 115, 91);
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+select
+{
+    font-size: 14px !important;
+}
+
+.item
+{
+    position: relative;
+    left: 1vw;
+    width: 90vw;
+    height: 40vh;
+    background-color: rgb(70, 115, 91);
+    border-radius: 15px;
+}
+
+.item h1
+{
+    height: 5vh;
+}
+
+.item img
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-details
+{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 57.5%;
+}
+
+.item-details-center
+{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+}
